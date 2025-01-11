@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Constructopia</title>
+		<link rel="stylesheet" href="stylesheet.css" />
+		<link rel="shortcut icon" href="./icons-images/logo.svg" type="image/x-icon" sizes="32x32">
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="holder">
+				<!-- Header -->
+
+				<header class="main-header flex-container align-items">
+					<section class="flex-container align-items">
+						<img src="./icons-images/logo.svg">
+						<h1>Constructopia</h1>
+					</section>
+					<section>
+						<ul class="sub-menu flex-container align-items">
+							<li><a href="#">About</a></li>
+							<li class="flex-container align-items" id="chevron-icon"><a href="#">Services</a>
+								<img src="./icons-images/bx-chevron-down.svg">
+							</li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Resources</a></li>
+							<li><a href="#">Contact Us</a></li>
+							<li id="active"><a href="#">Let's Talk</a></li>
+						</ul>
+					</section>
+				</header>
+
+				<!-- body -->
+				<section class="text">
+					<h1>
+						We are Building a
+						<span id="break">Sustainable Future</span>
+					</h1>
+					<p>
+						Committed to Innovative Practices and Eco-friendly
+						solutions
+					</p>
+				</section>
+				<section class="images-section flex-container">
+					<div class="contact-experts flex-container align-items">
+						<div class="expert-images">
+							<img
+								src="./icons-images/avatar.png"
+								alt="Expert Image"
+								id="img-fit"
+							/>
+							<img
+								src="./icons-images/avatar.png"
+								alt="Expert Image"
+								id="img-fit"
+								class="align_img"
+							/>
+						</div>
+						<p>Contact our Expert</p>
+					</div>
+					<div class="content-section">
+						<div class="engineer-section">
+							<div class="engineer-background">
+								<img
+									src="./icons-images/engineer.png"
+									alt="Engineer"
+									style="
+										width: 250px;
+										height: 300px;
+										object-fit: cover;
+									"
+								/>
+							</div>
+						</div>
+						<div class="wind-turbine-section flex-container align-items justify-content">
+							<div class="turbine-text-section">
+								<p>
+									Renewable Energy, <br />
+									Greener World, <br /><span>Bright </span
+									>Future
+								</p>
+							</div>
+							<div class="scale-container flex-container align-items justify-content">
+								<canvas id="energyChart"></canvas>
+								<img src="./icons-images/bxs-battery.svg" alt="">
+								<div class="percentage">75%</div>
+								<p>Energy Savings</p>
+							</div>
+						</div>
+					</div>
+					<div class="badge">
+						<img src="./icons-images/bxs-trophy.svg" alt="Trophy Badge" />
+						<p>#1 in Renewable <br>Industry</p>
+					</div>
+				</section>
+				<section class="body-footer flex-container align-items justify-content">
+					<p>It's Free for consultation</p>
+					<div class="contact-section flex-container align-items">
+						<div class="contact-button">
+							<button>Contact Us</button>
+						</div>
+						<div class="body-footer-img">
+							<img
+								src="./icons-images/avatar.png"
+								alt="Expert Image"
+								id="img-fit"
+							/>
+							<img
+								src="./icons-images/avatar.png"
+								alt="Expert Image"
+								id="img-fit"
+								class="align_img"
+							/>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<!-- Partners Section -->
+			<div class="partners-section-holder">
+				<section class="partners-info flex-container align-items">
+					<div class="partners-heading">
+						<h1>Investors & Partners</h1>
+					</div>
+					<div class="collaboration">
+						<p>
+							We believe that collaboration is the key to building
+							a sustainable future
+						</p>
+						<p>
+							Our Investors and partner play a crucial in driving
+							our mission forward.
+						</p>
+					</div>
+				</section>
+				<section class="partners-list">
+					<div class="partners">
+						<img src="./Partners/Brookfield.svg" alt="Brookfield Logo" width="120" height="24">
+					</div>
+					<div class="partners">
+						<img src="./Partners/Iberdrola.png" alt="Iberdrola Logo" width="120" height="24">
+					</div>
+					<div class="partners">
+						<img src="./Partners/Orsted.svg" alt="Orsted Logo">
+					</div>
+					<div class="partners">
+						<img src="./Partners/Vestas.svg" alt="Vestas Logo">
+					</div>
+					<div class="partners">
+						<img src="./Partners/Sun-energy.png" alt="Sun-energy Logo" width="120" height="24">
+					</div>
+					<div class="partners">
+						<img src="./Partners/Yingli.png" alt="Sun-energy Logo" width="120" height="24">
+					</div>
+				</section>
+				<section class="benefits-section">
+					<div class="benefits-header">
+						<h1>Our Main Benefits</h1>
+						<p>
+							We offer innovative solutions that not only enhance
+							environmental <br />sustainability but also drive
+							economic efficiency
+						</p>
+					</div>
+					<div class="benefits flex-container">
+						<div class="property">
+							<img src="./icons-images/bxs-buildings.svg" id="icon">
+							<h3>Innovative Green Technologies</h3>
+							<p>
+								Explore our cutting-edge solutions designed to
+								reduce environmental impact and promote
+								sustainability
+							</p>
+						</div>
+						<div class="property">
+							<img src="./icons-images/bxs-leaf.svg" id="icon">
+							<h3>Sustainable Projects</h3>
+							<p>
+								Delve into our portfolio of successful
+								sustainability projects that are making a real
+								difference
+							</p>
+						</div>
+						<div class="property">
+							<img src="./icons-images/handshake.svg" id="icon">
+							<h3>Community and Partnership</h3>
+							<p>
+								Join a thriving network of like-minded
+								individuals and organization dedicated to
+								building a sustainable future
+							</p>
+						</div>
+					</div>
+				</section>
+		</div>
+
+		<script>
+			//Scale Generator
+			const chart = document
+				.getElementById('energyChart')
+				.getContext('2d');
+			const data = {
+				datasets: [
+					{
+						data: [70, 30],
+						backgroundColor: ['#4caf50', '#e0e0e0'],
+						borderWidth: 0,
+						hoverOffset: 0,
+					},
+				],
+			};
+
+			new Chart(chart, {
+				type: 'doughnut',
+				data: data,
+				options: {
+					cutout: '80%',
+					plugins: {
+						legend: {
+							display: false,
+						},
+						tooltip: {
+							enabled: false,
+						},
+					},
+					rotation: -90,
+					circumference: 180,
+				},
+			});
+		</script>
+	</body>
+</html>
