@@ -256,6 +256,7 @@ canvas {
   padding: 10px;
   border-radius: 5px;
 }
+/* Services Offered Section */
 .third {
   height: 150vh;
   width: 100%;
@@ -286,8 +287,10 @@ canvas {
 h1 {
   font-size: 35px;
 }
-.icon {
+.right-arrow-icon {
   height: 30px;
+  /* width: 30px; */
+
 }
 .arrowbtn {
   height: 40px;
@@ -346,6 +349,10 @@ h1 {
   display: none;
   overflow: hidden;
 }
+.para {
+  color: rgb(168, 191, 210);
+  padding: 20px 0px;
+}
 .readnow-section {
   height: 300px;
   width: 100%;
@@ -363,10 +370,6 @@ h1 {
 }
 strong {
   color: rgb(135, 223, 135);
-}
-.para {
-  color: rgb(168, 191, 210);
-  padding: 20px 0px;
 }
 .contactbtn {
   height: 40px;
@@ -399,7 +402,7 @@ footer {
   padding: 7px 5px;
   border-radius: 10px;
 }
-ul {
+.footer-links {
   list-style: none;
   line-height: 35px;
   color: rgb(168, 191, 210);
