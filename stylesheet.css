@@ -258,24 +258,29 @@ canvas {
 }
 /* Services Offered Section */
 .third {
-  height: 150vh;
-  width: 100%;
   padding: 0px 7pc;
 }
-.providing,
-.Energy {
-  height: 200px;
-  width: 100%;
-  display: flex;
+.providing {
   justify-content: space-between;
+}
+h1  > span{
+  display: block;
+}
+.providing p {
+  max-width: 370px;
+}
+.Energy {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
+  margin-bottom: 2rem;
+}
+.Energy p {
+  width: 300px;
 }
 .solar {
   height: 150px;
   border-radius: 10px;
-}
-.division {
-  width: 30%;
 }
 .head {
   height: 180px;
@@ -289,12 +294,14 @@ h1 {
 }
 .right-arrow-icon {
   height: 30px;
-  /* width: 30px; */
+  width: 30px;
 
 }
 .arrowbtn {
+  display: inline-block;
   height: 40px;
   width: 40px;
+  margin-left: 10px;
   border-radius: 50%;
   background-color: transparent;
   border-color: rgb(246, 243, 248);
@@ -311,10 +318,6 @@ h1 {
   padding: 70px 10%;
   align-items: center;
 }
-
-/* h1 {
-  color: #0d0c22;
-} */
 
 .info-box {
   animation: fadeOut ease-in;
@@ -410,18 +413,14 @@ hr {
   padding: 0px 7pc;
 }
 .support {
-  height: 45vh;
+  /* height: 45vh; */
   width: 40%;
-  line-height: 40px;
+  line-height: 1.4;
 }
 .supportbtn {
-  height: 40px;
-  width: 35%;
-  display: flex;
+  background-color: var(--line-fill);
+  padding: 0.5rem;
   border-radius: 20px;
-  background-color: rgb(106, 212, 106);
-  justify-content: center;
-  align-items: center;
   border: none;
   margin-top: 20px;
   cursor: pointer;
@@ -436,7 +435,7 @@ hr {
   width: 100%;
   text-align: left;
   margin-top: 8px;
-  border: 2px solid black;
+  border: 1px solid black;
   border-color: gray;
   outline: none;
   border-radius: 20px;
@@ -477,7 +476,7 @@ strong {
 .contactbtn {
   height: 40px;
   width: 8pc;
-  background-color: rgb(97, 241, 97);
+  background-color: var(--line-fill);
   border: none;
   border-radius: 20px;
   margin-top: 20px;
@@ -579,14 +578,243 @@ h4 {
     opacity: 1;
   }
 }
-
-@media (max-width: 1140px) {
-  .founder-container {
-    padding: 40px 8%;
+@media screen and (max-width:480px ) {
+  .holder, .partners-section-holder, .fifth, .readnow-section, footer  {
+    padding: 20px;
   }
+  .contact-experts, .engineer-section, .right-arrow-icon, .arrowbtn, .not, #chevron-icon {
+    display: none;
+  }
+.main-header {
+  flex-direction: column;
+  align-items: stretch;
+}
+.include h1 {
+  font-size: 3rem;
+  margin-left: 10px;
+}
+.sub-menu {
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+.images-section {
+  flex-direction: column;
+  align-items: center;
+}
+.wind-turbine-section {
+  width: 300px;
+  height: 300px;
+}
+.badge {
+  margin: 20px 0;
+  align-self: center;
+}
+.partners-section-holder, .partners-heading h1 {
+  margin: 10px;
+}
+.partners-heading {
+  max-width: 100%;
+}
+.partners-info {
+  flex-direction: column;
+  padding: 0 10px;
+}
+.partners-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 10px;
+}
+.benefits {
+  flex-direction: column;
+  align-items: center;
+}
+.property:not(.property img) {
+  margin: 10px;
+}
+.third {
+  margin: 20px 0;
+  padding: 25px;
+}
+.third h1 {
+  margin-bottom: 10px;
+}
+.Energy {
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+.Energy p {
+  width: 100%;
+}
+.providing {
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 30px;
+}
+h1  > span {
+  display: inline;
+}
+.solar {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.fifth {
+  flex-direction: column;
+}
+.support {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.supportbtn {
+  justify-content: center;
+}
+.subsupport {
+  width: 100%;
+}
+.readnow-section {
+  margin-top: 23rem;
+}
+.construct {
+  justify-content: center;
+}
+.socials {
+  flex-direction: column;
+}
+.handles {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c-logo {
+  display: inline;
+}
+.link {
+  margin-bottom: 0;
+}
 }
 
 @media (max-width: 720px) {
+
+  .holder, .partners-section-holder, .fifth, .readnow-section, footer, .third {
+    padding: 20px;
+  }
+  .contact-experts, .right-arrow-icon, .arrowbtn, .engineer-section, .not{
+    display: none;
+  }
+  .main-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .include h1 {
+    font-size: 3rem;
+    margin-left: 10px;
+  }
+  .sub-menu {
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+  .images-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .badge {
+    margin: 20px 0;
+    align-self: center;
+  }
+  .partners-section-holder, .partners-heading h1 {
+    margin: 10px;
+  }
+  .partners-heading {
+    max-width: 100%;
+  }
+  .partners-info {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .partners-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 10px;
+  }
+  .benefits {
+    flex-direction: column;
+    align-items: center;
+  }
+  .property:not(.property img) {
+    margin: 10px;
+  }
+  .third h1 {
+    margin-bottom: 10px;
+  }
+  .Energy {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .Energy p {
+    width: 100%;
+  }
+  .providing {
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 30px;
+  }
+  h1  > span {
+    display: inline;
+  }
+  .solar {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  .fifth {
+    flex-direction: column;
+  }
+  .support {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .supportbtn {
+    justify-content: center;
+  }
+  .subsupport {
+    width: 100%;
+  }
+  .readnow-section {
+    margin-top: 25rem;
+  }
+  .construct {
+    justify-content: center;
+  }
+  .socials {
+    flex-direction: column;
+  }
+  .handles {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .c-logo {
+    display: inline;
+  }
+  .link {
+    margin-bottom: 0;
+  }
   .founder-container {
     grid-template-columns: 1fr;
     text-align: center;
@@ -594,7 +822,6 @@ h4 {
 
   .ceo {
     animation: slideUp ease-in;
-    /* text-align: center; */
     display: flex;
     flex-direction: column;
   }
@@ -604,4 +831,117 @@ h4 {
     justify-content: center;
     margin: 0.9rem 0;
   }
+}
+@media (max-width: 1140px) {
+  .holder, .partners-section-holder, .fifth, .readnow-section, footer  {
+    padding: 20px;
+  }
+  .contact-experts, .right-arrow-icon, .arrowbtn {
+    display: none;
+  }
+  .main-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .include h1 {
+    font-size: 3rem;
+    margin-left: 10px;
+  }
+  .sub-menu {
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+  .images-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .badge {
+    margin: 20px 0;
+    align-self: center;
+  }
+  .partners-section-holder, .partners-heading h1 {
+    margin: 10px;
+  }
+  .partners-heading {
+    max-width: 100%;
+  }
+  .partners-info {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .partners-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 10px;
+  }
+  .property:not(.property img) {
+    margin: 10px;
+  }
+  .third h1 {
+    margin-bottom: 10px;
+  }
+  .Energy {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .Energy p {
+    width: 100%;
+  }
+  .providing {
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 30px;
+  }
+  h1  > span {
+    display: inline;
+  }
+  .solar {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  .fifth {
+    flex-direction: column;
+  }
+  .support {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .supportbtn {
+    justify-content: center;
+  }
+  .subsupport {
+    width: 100%;
+  }
+  .readnow-section {
+    margin-top: 15rem;
+  }
+  .construct {
+    justify-content: center;
+  }
+  .socials {
+    flex-direction: column;
+  }
+  .handles {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .c-logo {
+    display: inline;
+  }
+  .link {
+    margin-bottom: 0;
+  }
+  .founder-container {
+    padding: 40px 8%;
+   }
 }
