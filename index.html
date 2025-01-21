@@ -50,7 +50,7 @@
 						solutions
 					</p>
 				</section>
-				<section class="images-section flex-container">
+				<section class="images-section flex-container justify-content">
 					<div class="contact-experts flex-container align-items">
 						<div class="expert-images">
 							<img
@@ -131,10 +131,10 @@
 					<div class="partners-heading">
 						<h1>Investors & Partners</h1>
 					</div>
-					<div class="collaboration">
+					<div>
 						<p>
 							We believe that collaboration is the key to building
-							a sustainable future
+							a sustainable future.
 						</p>
 						<p>
 							Our Investors and partner play a crucial in driving
@@ -143,22 +143,22 @@
 					</div>
 				</section>
 				<section class="partners-list">
-					<div class="partners">
+					<div class="partners flex-container justify-content">
 						<img src="./Partners/Brookfield.svg" alt="Brookfield Logo" width="120" height="24">
 					</div>
-					<div class="partners">
+					<div class="partners flex-container justify-content">
 						<img src="./Partners/Iberdrola.png" alt="Iberdrola Logo" width="120" height="24">
 					</div>
-					<div class="partners">
+					<div class="partners flex-container justify-content">
 						<img src="./Partners/Orsted.svg" alt="Orsted Logo">
 					</div>
-					<div class="partners">
+					<div class="partners flex-container justify-content">
 						<img src="./Partners/Vestas.svg" alt="Vestas Logo">
 					</div>
-					<div class="partners">
+					<div class="partners flex-container justify-content">
 						<img src="./Partners/Sun-energy.png" alt="Sun-energy Logo" width="120" height="24">
 					</div>
-					<div class="partners">
+					<div class="partners flex-container justify-content">
 						<img src="./Partners/Yingli.png" alt="Sun-energy Logo" width="120" height="24">
 					</div>
 				</section>
@@ -223,10 +223,10 @@
 				<h1>Renewable Energy Solutions
 				</h1>
 			  </div>
-			  <div class="flex-container">
+			  <div class="flex-container arrow-con">
 				<p>
-				  Enhance the power of clean energy with our <br />
-				  advanced renewable solutions. From solar panels to <br />
+				  Enhance the power of clean energy with our
+				  advanced renewable solutions. From solar panels to
 				  wind turbines, we providing cutting-edge technologies
 				</p>
 				<button class="arrowbtn">
@@ -246,9 +246,9 @@
 			  </div>
 			  <h1>
 				Eco-Friendly
-				manufacturing
+				Manufacturing
 			  </h1>
-			  <div class="flex-container">
+			  <div class="flex-container arrow-con">
 				<p>
 					Transform your production process with our
 					sustainable manufacturing solutions
@@ -276,7 +276,7 @@
 				Consulting
 				Services
 			  </h1>
-			  <div class="flex-container">
+			  <div class="flex-container arrow-con">
 					<p>
 						Navigate the complexities of environmental
 						regulations with our expert consulting services.
@@ -293,7 +293,7 @@
 				</div>
 			</div>
 			<hr />
-		  </section>
+		</section>
 
 		  <!-- Founders Section -->
 		  <div class="founder-container">
@@ -359,7 +359,7 @@
 		  </div>
 
 		  <!-- FAQ Section -->
-		  <section class="fifth">
+		<section class="fifth">
 			<div class="support">
 			  <h1> We Have 24/7 <span>Support Available</span></h1>
 			  <p>In case you are still looking for answers</p>
@@ -368,6 +368,7 @@
 						<p>Contact Support</p>
 						<img
 						class="right-arrow-icon c-logo"
+						id="not"
 						src="./assets/right-arrow.png"
 						alt=""
 						/>
@@ -445,20 +446,20 @@
 				</div>
 			  </div>
 			</div>
-		  </section>
-		  <section class="readnow-section">
+		</section>
+		<section class="readnow-section">
 			<div class="seventh">
 				<h1>Renewal <strong>Now</strong></h1>
 				<p class="para">
-				  By focusing on immediate action and sustainable practices, <br />
+				  By focusing on immediate action and sustainable practices,
 				  we are dedicated to creating a cleaner, greener world today
 				</p>
 				<button class="contactbtn">Contact Us</button>
 			</div>
-		  </section>
+		</section>
 
 		  <!-- Footer -->
-		  <footer>
+		<footer>
 			<div class="construct">
 			  <div class="logo">
 				<img
@@ -475,8 +476,12 @@
 				<ul class="footer-links">
 				  <li><a href="##">About Us</a></li>
 				  <li><a href="##">Product</a></li>
-				  <li><a href="##">Reviews</a></li>
-				  <li><a href="##">Investor Relations</a></li>
+				  <li class="absent"><a href="##">Reviews</a></li>
+				  <li class="absent"><a href="##">Investor Relations</a></li>
+				  <div class="present footer-links">
+					<li><a href="##">Privacy Policies</a></li>
+					<li><a href="##">Terms of Service</a></li>
+				  </div>
 				</ul>
 			  </div>
 			  <div class="not">
@@ -496,7 +501,7 @@
 				  <li><a href="##">FAQs</a></li>
 				</ul>
 			  </div>
-			  <div>
+			  <div class="absent-footer">
 				<h4>Legal</h4>
 				<ul class="footer-links">
 				  <li><a href="##">Privacy Policies</a></li>
@@ -506,8 +511,18 @@
 				</ul>
 			  </div>
 			</div>
+			<!-- Selected Footer links for responsiveness -->
+			 <div class="responsive-footer">
+				<ul class="footer-links">
+					<li><a href="##">About Us</a></li>
+					<li><a href="##">FAQs</a></li>
+					<li><a href="##">Privacy Policies</a></li>
+					<li><a href="##">Terms of Service</a></li>
+				</ul>
+			 </div>
+			 <!-- Selected Footer links for responsiveness ends here -->
 			<hr />
-			<div class="socials">
+			<div class="socials flex-container align-items">
 			  <h5> &copy; Copyright Constructopia 2024, All Rights Reserved.</h5>
 			  <div class="handles">
 				<a href="##"
@@ -517,7 +532,7 @@
 				<a href="##"><img src="./assets/twitter.png" alt="" /></a>
 			  </div>
 			</div>
-		  </footer>
-		  <script src="index.js"></script>
+		</footer>
+		<script src="index.js"></script>
 	</body>
 </html>

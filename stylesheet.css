@@ -27,7 +27,7 @@ body {
 .holder {
   background-color: var(--color-bg);
   color: #fff;
-  padding: 0 7rem 4rem;
+  padding: 0 4rem 2rem;
 }
 
 /*Header*/
@@ -204,14 +204,14 @@ canvas {
 /*Partners Section*/
 .partners-section-holder {
   margin: 3rem 0;
-  padding: 0 7rem;
+  padding: 0 4rem;
 }
 .partners-info {
   justify-content: space-between;
   margin: 3rem 0;
 }
 .partners-heading {
-  font-size: 2rem;
+  font-size: 1.5rem;
   max-width: 250px;
 }
 .partners-list {
@@ -225,16 +225,17 @@ canvas {
   border-radius: 5px;
   cursor: pointer;
 }
+/* Benefits Section */
+.benefits-section {
+  background-color: rgba(144, 238, 144, 0.2);
+  padding: 20px;
+  border-radius: 15px;
+}
 .benefits-header {
   text-align: center;
 }
 .benefits-header h1 {
   font-size: 2rem;
-}
-.benefits-section {
-  background-color: rgba(144, 238, 144, 0.2);
-  padding: 20px;
-  border-radius: 15px;
 }
 .benefits {
   justify-content: space-evenly;
@@ -258,29 +259,43 @@ canvas {
 }
 /* Services Offered Section */
 .third {
-  padding: 0px 7pc;
+  padding: 0px 5pc;
 }
 .providing {
+  width: 100%;
   justify-content: space-between;
+}
+.providing h1 {
+  font-size: 2rem;
 }
 h1  > span{
   display: block;
 }
 .providing p {
-  max-width: 370px;
+  line-height: 1.4;
+  max-width: 420px;
 }
 .Energy {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   margin-bottom: 2rem;
+  padding: 10px 0;
+}
+.Energy h1 {
+  font-size: 2rem;
+  text-align: center;
+  max-width: 350px;
 }
 .Energy p {
-  width: 300px;
+  max-width: 350px;
 }
 .solar {
   height: 150px;
   border-radius: 10px;
+}
+.arrow-con {
+  justify-content: space-around;
 }
 .head {
   height: 180px;
@@ -289,13 +304,9 @@ h1  > span{
 .sol {
   height: 180px;
 }
-h1 {
-  font-size: 35px;
-}
 .right-arrow-icon {
   height: 30px;
   width: 30px;
-
 }
 .arrowbtn {
   display: inline-block;
@@ -364,7 +375,6 @@ h1 {
 
 .founder-container p {
   color: #0d0c22;
-  /* font-weight: 600; */
   font-size: 15px;
   line-height: 1.3;
   padding: 4px 0;
@@ -407,27 +417,23 @@ hr {
 
 /* FAQ Section */
 .fifth {
-  height: 75vh;
-  width: 100%;
-  display: flex;
-  padding: 0px 7pc;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+  padding: 5px 5pc;
 }
 .support {
-  /* height: 45vh; */
-  width: 40%;
+  font-size: 1rem;
   line-height: 1.4;
 }
 .supportbtn {
   background-color: var(--line-fill);
+  font-size: 12px;
   padding: 0.5rem;
   border-radius: 20px;
   border: none;
   margin-top: 20px;
   cursor: pointer;
-}
-.subsupport {
-  height: 40vh;
-  width: 60%;
 }
 .accordion {
   cursor: pointer;
@@ -453,12 +459,12 @@ hr {
 }
 .para {
   color: rgb(168, 191, 210);
-  padding: 20px 0px;
+  padding: 20px 20px;
 }
 .readnow-section {
-  height: 300px;
   width: 100%;
-  padding: 0px 7pc;
+  padding: 5px 5pc;
+  margin-top: 3rem;
 }
 .seventh {
   height: 300px;
@@ -486,7 +492,7 @@ strong {
 footer {
   height: 80vh;
   width: 100%;
-  padding: 4pc 7pc;
+  padding: 4pc 5pc;
 
 }
 .construct {
@@ -497,7 +503,7 @@ footer {
 }
 .cons {
   color: rgb(33, 55, 74);
-  padding-left: 20px;
+  padding-left: 15px;
 }
 .logo {
   height: 40px;
@@ -533,9 +539,7 @@ h4 {
 .socials {
   height: 100px;
   width: 100%;
-  display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .handles {
   height: 50px;
@@ -545,6 +549,9 @@ h4 {
 }
 .link {
   margin-bottom: 8px;
+}
+.responsive-footer, .present {
+  display: none;
 }
 
 
@@ -578,242 +585,145 @@ h4 {
     opacity: 1;
   }
 }
-@media screen and (max-width:480px ) {
-  .holder, .partners-section-holder, .fifth, .readnow-section, footer  {
-    padding: 20px;
+@media (max-width: 1140px) {
+  .providing p {
+    max-width: 300px;
   }
-  .contact-experts, .engineer-section, .right-arrow-icon, .arrowbtn, .not, #chevron-icon {
-    display: none;
+  .Energy h1 {
+    font-size: 1.5rem;
   }
-.main-header {
-  flex-direction: column;
-  align-items: stretch;
-}
-.include h1 {
-  font-size: 3rem;
-  margin-left: 10px;
-}
-.sub-menu {
-  width: 100%;
-  justify-content: space-around;
-  margin-top: 15px;
-}
-.images-section {
-  flex-direction: column;
-  align-items: center;
-}
-.wind-turbine-section {
-  width: 300px;
-  height: 300px;
-}
-.badge {
-  margin: 20px 0;
-  align-self: center;
-}
-.partners-section-holder, .partners-heading h1 {
-  margin: 10px;
-}
-.partners-heading {
-  max-width: 100%;
-}
-.partners-info {
-  flex-direction: column;
-  padding: 0 10px;
-}
-.partners-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  gap: 10px;
-}
-.benefits {
-  flex-direction: column;
-  align-items: center;
-}
-.property:not(.property img) {
-  margin: 10px;
-}
-.third {
-  margin: 20px 0;
-  padding: 25px;
-}
-.third h1 {
-  margin-bottom: 10px;
-}
-.Energy {
-  grid-template-columns: 1fr;
-  text-align: center;
-}
-.Energy p {
-  width: 100%;
-}
-.providing {
-  flex-direction: column;
-  align-items: start;
-  margin-bottom: 30px;
-}
-h1  > span {
-  display: inline;
-}
-.solar {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-.fifth {
-  flex-direction: column;
-}
-.support {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.supportbtn {
-  justify-content: center;
-}
-.subsupport {
-  width: 100%;
-}
-.readnow-section {
-  margin-top: 23rem;
-}
-.construct {
-  justify-content: center;
-}
-.socials {
-  flex-direction: column;
-}
-.handles {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.c-logo {
-  display: inline;
-}
-.link {
-  margin-bottom: 0;
-}
+  .founder-container {
+    padding: 40px 8%;
+   }
 }
 
-@media (max-width: 720px) {
-
-  .holder, .partners-section-holder, .fifth, .readnow-section, footer, .third {
+@media (max-width: 1000px) {
+  .partners-section-holder, .main-header, .fifth, .readnow-section, footer, .providing, .Energy {
     padding: 20px;
   }
-  .contact-experts, .right-arrow-icon, .arrowbtn, .engineer-section, .not{
+  .Energy h1 {
+    max-width: 200px;
+    padding: 0 15px;
+    text-align: center;
+  }
+  .Energy p {
+    max-width: 200px;
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 875px) {
+  .container, .holder, .third {
+    padding: 0;
+    margin: 0;
+  }
+  .partners-section-holder, .main-header, .fifth, .readnow-section, footer, .providing, .Energy, .main-header  {
+    padding: 20px;
+  }
+  .third hr {
+    margin: 0 20px;
+  }
+  #active, .engineer-section, .arrowbtn {
     display: none;
   }
-  .main-header {
-    flex-direction: column;
-    align-items: stretch;
+  .holder {
+    padding-bottom: 20px;
   }
-  .include h1 {
-    font-size: 3rem;
-    margin-left: 10px;
-  }
-  .sub-menu {
-    width: 100%;
-    justify-content: space-around;
-    margin-top: 15px;
+  .text {
+    font-size: 2rem;
   }
   .images-section {
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
   }
-  .badge {
-    margin: 20px 0;
-    align-self: center;
+  .providing p {
+    max-width: 300px;
   }
-  .partners-section-holder, .partners-heading h1 {
-    margin: 10px;
-  }
-  .partners-heading {
-    max-width: 100%;
-  }
-  .partners-info {
-    flex-direction: column;
-    padding: 0 10px;
+  .Energy h1 {
+    font-size: 1rem;
+    padding-left: 20px;
+    max-width: 200px;
   }
   .partners-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
     gap: 10px;
+  }
+  .handles {
+    display: flex;
+    justify-content: space-around;
+  }
+  .link {
+    margin-bottom: 0;
+  }
+ }
+
+ @media (max-width: 811px) {
+  .main-header {
+    justify-content: space-around;
+  }
+  .sub-menu li:nth-of-type(3) {
+    display: none;
+  }
+  .providing p {
+    max-width: 210px;
+  }
+  .Energy p{
+    max-width: 200px;
+  }
+  .Energy h1 {
+    text-align: center;
+  }
+  .fifth {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .support{
+    margin-top: 15px;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+  }
+  .support h1 > span {
+    display: inline;
+  }
+ }
+
+ @media (max-width: 720px) {
+  .sub-menu li:nth-of-type(4), .absent, .absent-footer{
+    display: none;
+  }
+  .text h1 {
+    font-size: 2.5rem;
   }
   .benefits {
     flex-direction: column;
     align-items: center;
   }
   .property:not(.property img) {
-    margin: 10px;
-  }
-  .third h1 {
-    margin-bottom: 10px;
-  }
-  .Energy {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  .Energy p {
-    width: 100%;
+    max-width: 500px;
+    margin: 10px ;
   }
   .providing {
     flex-direction: column;
-    align-items: start;
-    margin-bottom: 30px;
+    align-items: center;
   }
-  h1  > span {
+  .providing h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+  }
+  .providing h1 span {
     display: inline;
+  }
+  .providing p {
+    max-width: 100%;
+    padding-left: 15px;
   }
   .solar {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
-    margin-bottom: 10px;
+    height: auto;
   }
-  .fifth {
-    flex-direction: column;
-  }
-  .support {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  .supportbtn {
-    justify-content: center;
-  }
-  .subsupport {
-    width: 100%;
-  }
-  .readnow-section {
-    margin-top: 25rem;
-  }
-  .construct {
-    justify-content: center;
-  }
-  .socials {
-    flex-direction: column;
-  }
-  .handles {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .c-logo {
+  .present {
     display: inline;
-  }
-  .link {
-    margin-bottom: 0;
   }
   .founder-container {
     grid-template-columns: 1fr;
@@ -832,116 +742,159 @@ h1  > span {
     margin: 0.9rem 0;
   }
 }
-@media (max-width: 1140px) {
-  .holder, .partners-section-holder, .fifth, .readnow-section, footer  {
+@media (max-width: 620px) {
+  .supportbtn > img {
+    display: none;
+  }
+  .Energy {
+    grid-template-columns: 1fr;
+  }
+  .Energy h1{
+    font-size: 1rem;
+    max-width: 100%;
+    margin: 5px 0;
+  }
+  .Energy p {
+    max-width: 100%;
+    padding: 0 5px;
+    text-align: center;
+  }
+  .partners-info {
+    flex-direction: column;
+  }
+  .partners-heading {
+    max-width: 100%;
+    margin-bottom: 5px;
+  }
+  .support > h1 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 525px) {
+  .container, .holder, .third {
+    padding: 0;
+    margin: 0;
+  }
+  .partners-section-holder, .fifth, .readnow-section, footer, .providing, .Energy {
     padding: 20px;
   }
-  .contact-experts, .right-arrow-icon, .arrowbtn {
+  .contact-experts, .engineer-section, .right-arrow-icon, .arrowbtn, .not {
     display: none;
+  }
+  .holder {
+    padding-bottom: 20px;
   }
   .main-header {
     flex-direction: column;
-    align-items: stretch;
+  }
+  #active, #icon {
+    display: none;
   }
   .include h1 {
-    font-size: 3rem;
-    margin-left: 10px;
+    font-size: 1.5rem;
   }
   .sub-menu {
     width: 100%;
-    justify-content: space-around;
     margin-top: 15px;
+  }
+  .text {
+    padding: 10px;
+    font-size: 1.2rem
   }
   .images-section {
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 5px;
   }
   .badge {
-    margin: 20px 0;
+    margin-top: 20px;
     align-self: center;
-  }
-  .partners-section-holder, .partners-heading h1 {
-    margin: 10px;
-  }
-  .partners-heading {
-    max-width: 100%;
   }
   .partners-info {
     flex-direction: column;
-    padding: 0 10px;
+    margin-top: 0;
+  }
+  .partners-section-holder, .partners-heading h1 {
+    margin: 10px; 
   }
   .partners-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     gap: 10px;
+  }
+  .partners-list img {
+    width: 80px;
+  }
+  .benefits-header h1 {
+    font-size: 1rem;
+  }
+  .benefits {
+    flex-direction: column;
+    align-items: center;
   }
   .property:not(.property img) {
     margin: 10px;
   }
-  .third h1 {
-    margin-bottom: 10px;
-  }
   .Energy {
-    grid-template-columns: 1fr;
-    text-align: center;
+    padding: 25px;
   }
-  .Energy p {
-    width: 100%;
+  .Energy p, .Energy h1 {
+    max-width: 100%;
+    text-align: center;
   }
   .providing {
     flex-direction: column;
-    align-items: start;
-    margin-bottom: 30px;
+    line-height: 1.2;
   }
-  h1  > span {
-    display: inline;
+  .providing h1 {
+    font-size: 1.5rem;
   }
   .solar {
     width: 100%;
-    height: 300px;
+    height: auto;
     object-fit: cover;
-    margin-bottom: 10px;
-  }
-  .fifth {
-    flex-direction: column;
-  }
-  .support {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  .supportbtn {
-    justify-content: center;
-  }
-  .subsupport {
-    width: 100%;
-  }
-  .readnow-section {
-    margin-top: 15rem;
   }
   .construct {
+    align-items: center;
     justify-content: center;
+  }
+  .cons {
+    font-size: 1.5rem;
+  }
+  .c-logo, .responsive-footer {
+    display: inline;
+  }
+  footer {
+    height: fit-content;
+  }
+  .policies {
+    display: none;
+  }
+  .responsive-footer {
+    text-align: center;
+  }
+  .responsive-footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
   }
   .socials {
     flex-direction: column;
+    height: 50px;
   }
   .handles {
     width: 100%;
+    height: fit-content;
     display: flex;
     justify-content: center;
-    align-items: center;
-  }
-  .c-logo {
-    display: inline;
   }
   .link {
     margin-bottom: 0;
   }
-  .founder-container {
-    padding: 40px 8%;
-   }
-}
+ .sub-menu li:nth-of-type(3){
+    display: inline;
+  }
+ }
