@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Constructopia</title>
+		<link rel="stylesheet" href="stylesheet.css" />
+		<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer"
+	  />
+		<link rel="shortcut icon" href="./assets/Logo.png" type="image/x-icon" sizes="32x32">
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="holder">
+				<!-- Header -->
+
+				<header class="main-header flex-container align-items">
+					<nav class="nav-bar">
+						<div class="constructopia">
+							<img src="./assets/Logo.png" class="logo">
+							<h1 class="nav-branding">Constructopia</h1>
+						</div>
+		
+						<ul class="nav-menu">
+							<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+							<li class="flex-container align-items nav-item" id="chevron-icon"><a href="#" class="nav-link">Services</a>
+								<img src="./icons-images/bx-chevron-down.svg">
+							</li>
+							<li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Resources</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+							<li id="active" class="nav-item"><a href="#" class="nav-link">Let's Talk</a></li>
+						</ul>
+						<div class="hamburger">
+							<span class="bar"></span>
+							<span class="bar"></span>
+							<span class="bar"></span>
+						</div>
+					</nav>
+				</header>
+
+				<!-- body -->
+				<section class="text">
+					<h1>
+						We are Building a
+						<span id="break">Sustainable Future</span>
+					</h1>
+					<p>
+						Committed to Innovative Practices and Eco-friendly
+						solutions
+					</p>
+				</section>
+				<section class="images-section flex-container">
+					<div class="contact-experts flex-container align-items">
+						<div class="expert-images">
+							<img
+								src="./icons-images/avatar.png"
+								alt="Expert Image"
+								id="img-fit"
+							/>
+							<img
+								src="./icons-images/avatar.png"
+								alt="Expert Image"
+								id="img-fit"
+								class="align_img"
+							/>
+						</div>
+						<p>Contact our Expert</p>
+					</div>
+					<div class="content-section">
+						<div class="engineer-section">
+							<div class="engineer-background">
+								<img
+									src="./icons-images/engineer.png"
+									alt="Engineer"
+									style="
+										width: 250px;
+										height: 300px;
+										object-fit: cover;
+									"
+								/>
+							</div>
+						</div>
+						<div class="wind-turbine-section flex-container align-items justify-content">
+							<div class="turbine-text-section">
+								<p>
+									Renewable Energy, <br />
+									Greener World, <br /><span>Bright </span
+									>Future
+								</p>
+							</div>
+							<div class="scale-container flex-container align-items justify-content">
+								<canvas id="energyChart"></canvas>
+								<img src="./icons-images/bxs-battery.svg" alt="">
+								<div class="percentage">75%</div>
+								<p>Energy Savings</p>
+							</div>
+						</div>
+					</div>
+					<div class="badge">
+						<img src="./icons-images/bxs-trophy.svg" alt="Trophy Badge" />
+						<p>#1 in Renewable <br>Industry</p>
+					</div>
+				</section>
+				<section class="body-footer flex-container align-items justify-content">
+					<p>It's Free for consultation</p>
+					<div class="contact-section flex-container align-items">
+						<div class="contact-button">
+							<button>Contact Us</button>
+						</div>
+						<div class="body-footer-img">
+							<img
+								src="./icons-images/avatar.png"
+								alt="Expert Image"
+								id="img-fit"
+							/>
+							<img
+								src="./icons-images/avatar.png"
+								alt="Expert Image"
+								id="img-fit"
+								class="align_img"
+							/>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<!-- Partners Section -->
+			<div class="partners-section-holder">
+				<section class="partners-info flex-container align-items">
+					<div class="partners-heading">
+						<h1>Investors & Partners</h1>
+					</div>
+					<div class="collaboration">
+						<p>
+							We believe that collaboration is the key to building
+							a sustainable future
+						</p>
+						<p>
+							Our Investors and partner play a crucial in driving
+							our mission forward.
+						</p>
+					</div>
+				</section>
+				<section class="partners-list">
+					<div class="partners">
+						<img src="./Partners/Brookfield.svg" alt="Brookfield Logo" width="120" height="24">
+					</div>
+					<div class="partners">
+						<img src="./Partners/Iberdrola.png" alt="Iberdrola Logo" width="120" height="24">
+					</div>
+					<div class="partners">
+						<img src="./Partners/Orsted.svg" alt="Orsted Logo">
+					</div>
+					<div class="partners">
+						<img src="./Partners/Vestas.svg" alt="Vestas Logo">
+					</div>
+					<div class="partners">
+						<img src="./Partners/Sun-energy.png" alt="Sun-energy Logo" width="120" height="24">
+					</div>
+					<div class="partners">
+						<img src="./Partners/Yingli.png" alt="Sun-energy Logo" width="120" height="24">
+					</div>
+				</section>
+				<!-- Benefits Section -->
+				<section class="benefits-section">
+					<div class="benefits-header">
+						<h1>Our Main Benefits</h1>
+						<p>
+							We offer innovative solutions that not only enhance
+							environmental <br />sustainability but also drive
+							economic efficiency
+						</p>
+					</div>
+					<div class="benefits flex-container">
+						<div class="property">
+							<img src="./icons-images/bxs-buildings.svg" id="icon">
+							<h3>Innovative Green Technologies</h3>
+							<p>
+								Explore our cutting-edge solutions designed to
+								reduce environmental impact and promote
+								sustainability
+							</p>
+						</div>
+						<div class="property">
+							<img src="./icons-images/bxs-leaf.svg" id="icon">
+							<h3>Sustainable Projects</h3>
+							<p>
+								Delve into our portfolio of successful
+								sustainability projects that are making a real
+								difference
+							</p>
+						</div>
+						<div class="property">
+							<img src="./icons-images/handshake.svg" id="icon">
+							<h3>Community and Partnership</h3>
+							<p>
+								Join a thriving network of like-minded
+								individuals and organization dedicated to
+								building a sustainable future
+							</p>
+						</div>
+					</div>
+				</section>
+		</div>
+		<!-- Services Offered Section -->
+		<section class="third">
+			<div class="providing flex-container align-items">
+			  <h1>Providing <span> Best Services </span></h1>
+			  <p>
+				We are dedicated to providing the best services in the sustainability
+				manufacturing industry. Our commitment to excellence is reflected in
+				our innovative practices, cutting edge-technology, and a passionate team
+				of experts.
+			  </p>
+			</div>
+			<hr />
+			<div class="Energy">
+			  <div class="solar">
+				<img class="solar" src="./assets/solar.jpeg" alt="" />
+			  </div>
+			  <div>
+				<h1>Renewable Energy Solutions
+				</h1>
+			  </div>
+			  <div class="flex-container">
+				<p>
+				  Enhance the power of clean energy with our <br />
+				  advanced renewable solutions. From solar panels to <br />
+				  wind turbines, we providing cutting-edge technologies
+				</p>
+				<button class="arrowbtn">
+				  <img
+					class="right-arrow-icon"
+					src="./assets/right-arrow.png"
+					alt=""
+				  />
+				</button>
+			  </div>
+	  
+			</div>
+			<hr />
+			<div class="Energy">
+			  <div>
+				<img class="solar" src="./assets/installation.jpg" alt="" />
+			  </div>
+			  <h1>
+				Eco-Friendly
+				manufacturing
+			  </h1>
+			  <div class="flex-container">
+				<p>
+					Transform your production process with our
+					sustainable manufacturing solutions
+					</p>
+					<button class="arrowbtn">
+					<img
+						class="right-arrow-icon"
+						src="./assets/right-arrow.png"
+						alt=""
+					/>
+					</button>
+				</div>
+			</div>
+			<hr/>
+			<div class="Energy">
+			  <div>
+				<img
+				  class="solar sol"
+				  src="./assets/house-electrical-wiring-service.jpg"
+				  alt=""
+				/>
+			  </div>
+			  <h1>
+				Environmental
+				Consulting
+				Services
+			  </h1>
+			  <div class="flex-container">
+					<p>
+						Navigate the complexities of environmental
+						regulations with our expert consulting services.
+						We provide comprehensive assessments and
+						strategic planning.
+					</p>
+					<button class="arrowbtn">
+					<img
+						class="right-arrow-icon"
+						src="./assets/right-arrow.png"
+						alt=""
+					/>
+					</button>
+				</div>
+			</div>
+			<hr />
+		  </section>
+
+		  <!-- Founders Section -->
+		  <div class="founder-container">
+			<div class="image-box">
+			  <img
+				class="img"
+				src="./assets/happy-father-son-posing-while-holding-cups.jpg"
+				alt=""
+			  />
+			</div>
+	  
+			<div class="info-box">
+			  <h1>Our Founders 75</h1>
+			  <p>The visionaries behind our renewable future</p>
+	  
+			  <div class="ceo">
+				<div class="details">
+				  <img
+					src="./assets/carefree-guy-with-glasses-posing-against-white-wall-with-his-coffee.jpg"
+					alt=""
+				  />
+				  <div class="founder-text">
+					<h1>John Smith</h1>
+					<p class="post">Chief Executive Officer (CEO)</p>
+				  </div>
+				</div>
+				<p>
+				  John Smith has been at the forefront of the renewable energy
+				  industry for over two decades
+				</p>
+				<div class="social-icons">
+				  <i class="fa-brands fa-linkedin"></i>
+				  <i class="fa-brands fa-facebook-f"></i>
+				  <i class="fa-brands fa-instagram"></i>
+				</div>
+			  </div>
+	  
+			  <hr />
+	  
+			  <div class="ceo">
+				<div class="details">
+				  <img
+					src="./assets/carefree-guy-with-glasses-posing-against-white-wall-with-his-coffee.jpg"
+					alt=""
+				  />
+				  <div class="founder-text">
+					<h1>Cole Palmer</h1>
+					<p class="post">Chief Technology Officer (CTO)</p>
+				  </div>
+				</div>
+				<p>
+				  Cole Palmer is a trailblazer in the field of renewable energy
+				  technology. He brings a wealth of experience in engineering
+				</p>
+				<!-- social-icons -->
+				<div class="social-icons">
+				  <i class="fa-brands fa-linkedin"></i>
+				  <i class="fa-brands fa-facebook-f"></i>
+				  <i class="fa-brands fa-instagram"></i>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <!-- FAQ Section -->
+		  <section class="fifth">
+			<div class="support">
+			  <h1> We Have 24/7 <span>Support Available</span></h1>
+			  <p>In case you are still looking for answers</p>
+				<div class="support-btn">
+					<button class="supportbtn flex-container align-items justify-content">
+						<p>Contact Support</p>
+						<img
+						class="right-arrow-icon c-logo"
+						src="./assets/right-arrow.png"
+						alt=""
+						/>
+					</button>
+				</div>
+			</div>
+			<div class="subsupport">
+			  <div class="accord">
+				<button class="accordion">
+				  <h3>What type of Renewable energy solution do you offer?</h3>
+				</button>
+				<div class="panel">
+				  <p class="para">
+					We offer a variety of renewable energy solutions, including solar
+					power and wind energy, hydroelectric power and geothermal energy
+					systems. Our goal is to provide comprehensive solutions tailored
+					to meet the specific needs of our client.
+				  </p>
+				</div>
+			  </div>
+			  <div class="accord">
+				<button class="accordion">
+				  <h3>
+					How can I determine if renewable energy is right for my home?
+				  </h3>
+				</button>
+				<div class="panel">
+				  <p class="para">
+					We offer a variety of renewable energy solutions, including solar
+					power and wind energy, hydroelectric power and geothermal energy
+					systems. Our goal is to provide comprehensive solutions tailored
+					to meet the specific needs of our client.
+				  </p>
+				</div>
+			  </div>
+			  <div class="accord">
+				<button class="accordion">
+				  <h3>
+					What are the financial benefits of switching to renewable energy?
+				  </h3>
+				</button>
+				<div class="panel">
+				  <p class="para">
+					We offer a variety of renewable energy solutions, including solar
+					power and wind energy, hydroelectric power and geothermal energy
+					systems. Our goal is to provide comprehensive solutions tailored
+					to meet the specific needs of our client.
+				  </p>
+				</div>
+			  </div>
+			  <div class="accord">
+				<button class="accordion">
+				  <h3>How long does it take to install a renewable energy system?</h3>
+				</button>
+				<div class="panel">
+				  <p class="para">
+					We offer a variety of renewable energy solutions, including solar
+					power and wind energy, hydroelectric power and geothermal energy
+					systems. Our goal is to provide comprehensive solutions tailored
+					to meet the specific needs of our client.
+				  </p>
+				</div>
+			  </div>
+			  <div class="accord">
+				<button class="accordion">
+				  <h3>What maintenance is required for renewable energy systems</h3>
+				</button>
+				<div class="panel">
+				  <p class="para">
+					We offer a variety of renewable energy solutions, including solar
+					power and wind energy, hydroelectric power and geothermal energy
+					systems. Our goal is to provide comprehensive solutions tailored
+					to meet the specific needs of our client.
+				  </p>
+				</div>
+			  </div>
+			</div>
+		  </section>
+		  <section class="readnow-section">
+			<div class="seventh">
+				<h1>Renewal <strong>Now</strong></h1>
+				<p class="para">
+				  By focusing on immediate action and sustainable practices, <br />
+				  we are dedicated to creating a cleaner, greener world today
+				</p>
+				<button class="contactbtn">Contact Us</button>
+			</div>
+		  </section>
+
+		  <!-- Footer -->
+		  <footer>
+			<div class="construct">
+			  <div class="logo">
+				<img
+				  class="right-arrow-icon c-logo"
+				  src="./assets/Logo.png"
+				  alt="Logo"
+				/>
+			  </div>
+			  <h1 class="cons">Constructopia</h1>
+			</div>
+			<div class="policies">
+			  <div>
+				<h4>Company</h4>
+				<ul class="footer-links">
+				  <li><a href="##">About Us</a></li>
+				  <li><a href="##">Product</a></li>
+				  <li><a href="##">Reviews</a></li>
+				  <li><a href="##">Investor Relations</a></li>
+				</ul>
+			  </div>
+			  <div class="not">
+				<h4>Services</h4>
+				<ul class="footer-links">
+				  <li><a href="##">Renewable Energy Solutions</a></li>
+				  <li><a href="##">Eco-Friendly manufacturing</a></li>
+				  <li><a href="##">Environmental Consulting Services</a></li>
+				</ul>
+			  </div>
+			  <div>
+				<h4>Resources</h4>
+				<ul class="footer-links">
+				  <li><a href="##">Blog</a></li>
+				  <li><a href="##">Case Studies</a></li>
+				  <li><a href="##">White Papers</a></li>
+				  <li><a href="##">FAQs</a></li>
+				</ul>
+			  </div>
+			  <div>
+				<h4>Legal</h4>
+				<ul class="footer-links">
+				  <li><a href="##">Privacy Policies</a></li>
+				  <li><a href="##">Terms of Service</a></li>
+				  <li><a href="##">Cookie Policy</a></li>
+				  <li><a href="##">Accessibility</a></li>
+				</ul>
+			  </div>
+			</div>
+			<hr />
+			<div class="socials">
+			  <h5> &copy; Copyright Constructopia 2024, All Rights Reserved.</h5>
+			  <div class="handles">
+				<a href="##"
+				><img class="link" src="./assets/linkedin.png" alt=""
+				/></a>
+				<a href="##"><img src="./assets/facebook.png" alt="" /></a>
+				<a href="##"><img src="./assets/twitter.png" alt="" /></a>
+			  </div>
+			</div>
+		  </footer>
+		  <script src="index.js"></script>
+	</body>
+</html>
