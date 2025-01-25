@@ -1,10 +1,10 @@
 //Scale Generator
-const chart = document.getElementById('energyChart').getContext('2d');
+const chart = document.getElementById("energyChart").getContext("2d");
 const data = {
   datasets: [
     {
       data: [70, 30],
-      backgroundColor: ['#4caf50', '#e0e0e0'],
+      backgroundColor: ["#4caf50", "#e0e0e0"],
       borderWidth: 0,
       hoverOffset: 0,
     },
@@ -12,10 +12,10 @@ const data = {
 };
 
 new Chart(chart, {
-  type: 'doughnut',
+  type: "doughnut",
   data: data,
   options: {
-    cutout: '80%',
+    cutout: "80%",
     plugins: {
       legend: {
         display: false,
@@ -30,28 +30,44 @@ new Chart(chart, {
 });
 
 //Accordion
-let acc = document.getElementsByClassName('accordion');
+let acc = document.getElementsByClassName("accordion");
 
 for (let i = 0; i < acc.length; i++) {
-  acc[i].addEventListener('click', function () {
+  acc[i].addEventListener("click", function () {
     // Close all other panels
     for (let j = 0; j < acc.length; j++) {
       if (acc[j] !== this) {
-        acc[j].classList.remove('active');
+        acc[j].classList.remove("active");
         let otherPanel = acc[j].nextElementSibling;
-        if (otherPanel.style.display === 'block') {
-          otherPanel.style.display = 'none';
+        if (otherPanel.style.display === "block") {
+          otherPanel.style.display = "none";
         }
       }
     }
 
     // Toggle the current panel
-    this.classList.toggle('active');
+    this.classList.toggle("active");
     let panel = this.nextElementSibling;
-    if (panel.style.display === 'block') {
-      panel.style.display = 'none';
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
     } else {
-      panel.style.display = 'block';
+      panel.style.display = "block";
     }
   });
 }
+
+// hamburger styling
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav-link").forEach((n) =>
+  n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  })
+);
